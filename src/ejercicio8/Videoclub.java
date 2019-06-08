@@ -50,7 +50,7 @@ public class Videoclub {
 		}
 
 		//COLECCION 3
-		//Forma 1 con función anónima
+		//Forma 1 con función anónima 
 		SortedSet<Pelicula> coleccion3 = new TreeSet<>(new Comparator<>() {
 			public int compare(Pelicula p1, Pelicula p2) {
 				int comparacion = p1.getFechaEstreno().compareTo(p2.getFechaEstreno());

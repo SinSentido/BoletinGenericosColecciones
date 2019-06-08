@@ -64,7 +64,7 @@ public class Main {
 		//colección sin duplicados del apartado 2. Ejemplo: si el usuario introduce 3 y 5, se muestran los
 		//exámenes de Sistemas Informáticos, Entornos de Desarrollo y Lenguaje de Marcas.
 		System.out.println("\n\nD)");
-		List<Examen> lista2 = new ArrayList(sinDuplicados);
+		List<Examen> lista2 = new ArrayList<>(sinDuplicados);
 		System.out.println("Introduce el primer examen que quieres ver: ");
 		num1 = readNumberInRange(1, lista2.size(), Limit.MAX_MIN_INCLUDED)-1;
 		System.out.println("Introduce el último examen que quieres ver: ");
@@ -79,7 +79,7 @@ public class Main {
 		//asignatura es la misma, entonces ordena por fecha, y si la fecha también es la misma, entonces
 		//ordena por hora. El primer examen será el de Base de Datos que empieza a las 08:15 y el último
 		//será el de Sistemas Informáticos.
-		Set<Examen> arbol = new TreeSet(sinDuplicados);
+		Set<Examen> arbol = new TreeSet<>(sinDuplicados);
 		System.out.println("\n\nE)");
 		for(Examen e : arbol) {
 			System.out.println(e.toString());
